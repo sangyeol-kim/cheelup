@@ -1,10 +1,9 @@
 <%= render partial: 'posts/form', locals: { post: @post } %>
 
-<h1>칠칠칠</h1>
 
 <div class="scale">
     <div class="scale-up-center"></div>&nbsp;&nbsp;
-    
+    <div class="cs">기쁨</div>
     <div class="scale-up-center2"></div>&nbsp;&nbsp;
     
     <div class="scale-up-center3"></div>&nbsp;&nbsp;
@@ -15,7 +14,8 @@
     
     <div class="scale-up-center6"></div>&nbsp;&nbsp;
     
-    <div class="scale-up-center7"></div>
+    <div class="scale-up-center7"></div><br>
+    
 </div>
 
 <%= link_to '글쓰기', new_post_path %>
@@ -53,6 +53,3 @@
   <%= f.input :color, as: :minicolors, input_html: {data: {
           minicolors: {theme: :bootstrap, position: :right}}} %>
 <% end %>
-
-
-

@@ -12,9 +12,16 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .
+//= require_tree 
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
 //= require tinymce
 //= require tinymce-jquery
+//= require moment
+//= require fullcalendar
+//= require jquery 
+//= require jquery.minicolors
+//= require jquery.minicolors.simple_form
+
+$('#calendar').fullCalendar({});

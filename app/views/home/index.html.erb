@@ -19,3 +19,18 @@
 </div>
 
 <%= link_to '글쓰기', new_post_path %>
+<%# app/views/balloons/_form.html.erb %>
+
+<%# Basic usage: %>
+<%= simple_form_for @balloon do |f| %>
+  <%= f.input :color, as: :minicolors %>
+<% end %>
+
+<%# With Bootstrap theme and swatch on the right: %>
+<%= simple_form_for @balloon do |f| %>
+  <%= f.input :color, as: :minicolors, input_html: {data: {
+          minicolors: {theme: :bootstrap, position: :right}}} %>
+<% end %>asa
+
+
+

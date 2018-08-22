@@ -11,9 +11,9 @@
  * It is generally better to create a new file per style scope.
  *
  *= require jquery.minicolors
- *= require fullcalendar
  *= require_tree .
  *= require_self
+ *= require simple_calendar
  */
  
  
@@ -194,5 +194,3 @@ input#user_password_confirmation{
         margin-top: -8px;
         font-size: 10pt;
     }
-    
-    

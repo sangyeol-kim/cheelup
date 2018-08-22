@@ -9,6 +9,9 @@
   <strong>Content:</strong>
   <%= @post.content.html_safe %>
 </p>
+color: <%= @post.color %>
+
+ <p style="color: red;">asd: <%= @post.start_time %></p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<%= link_to 'Back', root_path %>

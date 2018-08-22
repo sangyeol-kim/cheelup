@@ -1,9 +1,54 @@
+<div style="margin-top: 30px; background-color: #d5d5ff; padding: 20px;">
+    <% @posts.each do |x| %>
+        <div class="row">
+            <%= link_to "#{x.title}", post_path(x) %>
+            <div><%= x.created_at.strftime("%Y년 %m월 %d일")%> 작성</div>
+        </div>
+    <% end %>
+</div>
 
+<div class="first_scale"></div>&nbsp;&nbsp;
+
+<%= render partial: 'posts/form', locals: { post: @post } %>
+
+<%= link_to '달력', calendar_index_path %>
+<%= link_to '글쓰기', new_post_path %>
+<%#= link_to '글보기', post_path(@posts) %>
+
+<script>
+/*    $(document).ready(function() {
+        $(".scale-up-center").click(function() {
+            var color = $(".scale-up-center").css("background-color");
+            $(".first_scale").css("background-color", color);
+        })
+    })
+*/
+
+$(document).ready(function() {
+        $(".scale-up-center").click(function() {
+            var color = $(".scale-up-center").css("background-color");
+            $(".first_scale").css("background-color", color);
+            
+            var formData = new FormData();
+
+            formData.append('color', color);
+            
+            $.ajax({
+                  url: "/home/color",
+                  type: 'POST',
+                  data: formData,
+                  success: function (data) {
+                      console.log(data);
+                  }
+            });
+        })
+    })
+</script>
  
   <div class="block">
    <h2>Parallax Speed -1</h2></div>
   <div class="wrapper">
-    
+
   <div class="box header">
     
   </div>
@@ -74,5 +119,25 @@
 
 
 
-       
-     
+<footer id="dkFoot" class="foot_cheel">
+    <div class="inner_foot">
+        <span class="ico_cheel ico_logo"></span>
+        <%= image_tag "logo_kor.png", size:"80x80", style: "background-position:-200px 0; position:absolute; vertical-align:top;" %>
+        <!-- position:absoulute/ background-position:-200px 0; vertical-align: top; -->
+        <!-- class: "mx-auto d-block" -->
+        <div class="area_quotation">
+            <q class="txt_quotation">Color your own color</q>
+            <span class="txt_by">Cheel</span>
+        </div>
+    <ul class="list_info">
+        <li>
+            <a href="/policy/privacy" target="_blank" class="link_info">개인정보 처리방침</a>
+        </li>
+    </ul>
+    <small class="txt_copyright">
+        <a href="http://google.com" class="link_corp" target="_blank">(c) Cheel
+        </a> 
+    </small>
+    </div>
+</footer>
+<%# app/views/balloons/_form.html.erb %>

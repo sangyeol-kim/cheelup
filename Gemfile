@@ -8,7 +8,6 @@ end
 gem 'jquery-minicolors-rails'
 
 gem 'momentjs-rails'
-gem 'fullcalendar-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
 # Use sqlite3 as the database for Active Record
@@ -55,11 +54,13 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
 gem 'devise'
-
 gem 'jquery-rails'
-
 gem 'bootstrap', '~> 4.1.1'
-
 gem 'tinymce-rails'
+gem 'tinymce-rails-imageupload', '~> 4.0.0.beta'
+gem 'carrierwave'
+gem 'fog', '~> 1.41.0'
+gem 'rails_db'
+gem 'simple_form'
+gem "simple_calendar", "~> 2.0"

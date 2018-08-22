@@ -1,0 +1,9 @@
+<%= month_calendar events: @posts do |date, meetings| %>
+  <%= date %>
+
+  <% meetings.each do |meeting| %>
+    <div class="date_content">
+      <%= link_to "#{meeting.content.html_safe}", post_path(meeting) %>
+    </div>
+  <% end %>
+<% end %>

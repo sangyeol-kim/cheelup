@@ -1,28 +1,32 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+          <div class="navv">
+            
+          <div class="logog">
+          <%= image_tag "logo_kor.png", size:"50x50" %>
+          </div>
+           
+           
+          <button class="he2" onclick="fnMove('1')">오늘</button>&nbsp;
+          <button class="he2" onclick="fnMove('2')">글쓰기</button>&nbsp;
+          <button class="he2" onclick="fnMove('3')">과거</button>&nbsp;
+          
+         
+         <div class="nav0">
+          
         <% if user_signed_in? %>
-          <li class="nav-item active">
+          <div class="nav1">
             <%= link_to('Logout', destroy_user_session_path, method: :delete) %>  
-          </li>        
+          </div>        
         <% else %>
-          <li class="nav-item active">
-            <a class="nav-link" data-toggle="modal" data-target="#signUpModal">Sign Up</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="modal" data-target="#logInModal">Log In</a>
-          </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="/events">일정</a>
-        </li>  
+          <div class="nav2">
+            <a class="link1" data-toggle="modal" data-target="#signUpModal">SignUp</a>&nbsp;
+          </div>
+          <div class="nav3">
+            <a class="link2" data-toggle="modal" data-target="#logInModal">LogIn</a>
+          </div>
+       
           
         <% end %>
         
-        
-      </ul>
-    </div>
-</nav>
+    
+         </div>
+</div>

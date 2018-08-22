@@ -121,6 +121,7 @@ body{
 .content1 {
   grid-area: content1;
   position: relative;
+  
 }
 
 .content2 {
@@ -143,6 +144,7 @@ body{
 .content5 {
   grid-area: content5;
   position: relative;
+  display: inline-grid;
 }
 
 
@@ -435,3 +437,36 @@ body{
 
 ::-webkit-scrollbar-thumb {border-radius:8px; }
 
+.boxcolor{
+      width: 250px;
+    height: 50px;
+ 
+  border:1px solid #e4e3e3;
+  display: inline-block;
+      margin-top: 30px;
+      margin: 0 auto;
+}
+
+.boxcolor2{
+   width: 60px;
+    height: 50px;
+    background-color: #583232;
+}
+
+.boxtit{
+  width: 250px;
+    height: 50px;
+  color:#fff;
+  border:1px solid #e4e3e3;
+  display: inline-block;
+      margin: 0 auto;
+}
+
+.boxcon{
+  width: 250px;
+    height: 250px;
+  color:#fff;
+  border:1px solid #e4e3e3;
+  display: inline-block;
+      margin: 0 auto;
+}

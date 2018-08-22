@@ -15,5 +15,184 @@
  *= require_tree .
  *= require_self
  */
+ 
+ 
 
 @import "bootstrap";
+
+
+
+.modal-dialog {
+    max-width: 280px;
+    margin: 1.75rem auto;
+}
+    
+.modal-open .modal {  
+background: #EA5C54 ; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #EA5C54  0%, #bb6dec 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#EA5C54 ), color-stop(100%,#bb6dec)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg,  #EA5C54  0%,#bb6dec 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg,  #EA5C54  0%,#bb6dec 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg,  #EA5C54  0%,#bb6dec 100%); /* IE10+ */
+  background: linear-gradient(135deg,  #EA5C54  0%,#bb6dec 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EA5C54 ', endColorstr='#bb6dec',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.modal-content {
+        background: #35394a; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #35394a 0%, #1f222e 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#35394a), color-stop(100%,#1f222e)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg,  #35394a 0%,#1f222e 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg,  #35394a 0%,#1f222e 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg,  #35394a 0%,#1f222e 100%); /* IE10+ */
+    background: linear-gradient(45deg,  #35394a 0%,#1f222e 100%); /* W3C */
+    border-radius: 0;
+    padding-bottom: 40px;
+    margin-top: 100px;
+    left: 50%;
+    top: 50%
+}
+
+input.btn.btn-default {
+    border-radius:50px;
+          background:transparent;
+          padding:10px 50px;
+          border:2px solid #DC6180 ;
+          color: #DC6180 ;
+          text-transform:uppercase;
+          font-size:11px;
+          transition-property:background,color;
+          transition-duration:.2s;
+          margin-top: 23px;
+              
+            margin-bottom: 10px;
+           &:hover{
+            color:white;
+            background:#DC6180 ;
+            cursor:pointer;
+            transition-property:background,color;
+            transition-duration:.2s;
+          }
+}
+
+.modal-header {
+    border-bottom-style: none;
+}
+
+.sub{
+    
+    color: #ececec;
+    font-size: 12pt;
+        margin-top: 100px;
+    margin-left: 10px;
+
+}
+
+.close{
+    color: #5e5e5e;
+    text-shadow: 0 1px 0 #ffffff;
+}
+
+.modal-body {
+    padding:0;
+    margin-top: 20px;
+}
+
+.modal-body2 {
+    padding:0;
+    margin-top: -40px;
+}
+
+.field1{
+    width: 280px;
+    margin-top:-2px;
+}
+
+input#user_email {
+    width: 278.5px;
+      border-top: 2px solid rgb(57, 61, 82);
+        border-bottom: 2px solid rgb(57, 61, 82);
+        border-right: none;
+        border-left: none;
+        outline: none;
+        box-shadow: none;
+        background: rgb(50, 54, 74);
+        padding: 7px;
+        font-size: 8pt;
+}
+
+input#user_password{
+   width: 278.5px;
+      border-top: 2px solid rgb(57, 61, 82);
+        border-bottom: 2px solid rgb(57, 61, 82);
+        border-right: none;
+        border-left: none;
+        outline: none;
+        box-shadow: none;
+        background: rgb(50, 54, 74);
+        padding: 7px;
+        font-size: 8pt;
+}
+
+input#user_password_confirmation{
+    width: 278.5px;
+      border-top: 2px solid rgb(57, 61, 82);
+        border-bottom: 2px solid rgb(57, 61, 82);
+        border-right: none;
+        border-left: none;
+        outline: none;
+        box-shadow: none;
+        background: rgb(50, 54, 74);
+        padding: 7px;
+        font-size: 8pt;
+}
+
+.modal.show .modal-dialog{
+    width: 500px; 
+    left: 50%;
+     margin-left: -250px;
+
+}
+
+.hi{
+    text-align:center;
+    font-size: 9pt;
+    margin-top: 10px;
+    color: #a6a4a4;
+}
+
+.actions {
+    text-align: center;
+}
+
+    input.btn.btn-primary{
+    border-radius:50px;
+          background:transparent;
+          padding:10px 50px;
+          border:2px solid #DC6180 ;
+          color: #DC6180 ;
+          text-transform:uppercase;
+          font-size:11px;
+          transition-property:background,color;
+          transition-duration:.2s;
+          margin-top: 23px;
+              
+            margin-bottom: 10px;
+           &:hover{
+            color:white;
+            background:#DC6180 ;
+            cursor:pointer;
+            transition-property:background,color;
+            transition-duration:.2s;
+          }
+    }
+    
+    .field2{
+        text-align: right;
+        margin-right: 5%;
+        color: #b4b4b4;
+        margin-top: -8px;
+        font-size: 10pt;
+    }
+    
+    

@@ -1,55 +1,78 @@
-<%= render partial: 'posts/form', locals: { post: @post } %>
 
+ 
+  <div class="block">
+   <h2>Parallax Speed -1</h2></div>
+  <div class="wrapper">
+    
+  <div class="box header">
+    
+  </div>
+  
+  <div class="box header2">
+       
+         
+  </div>
+  
+  <div class="box header3">
+        
+  </div>
+ 
+  <div class="box sidebar1"></div>
+  <div class="box content1">오늘감정</div>
+  <div class="box section1"></div>
 
-<div class="scale">
-    <div class="scale-up-center"></div>&nbsp;&nbsp;
-    <div class="cs">기쁨</div>
-    <div class="scale-up-center2"></div>&nbsp;&nbsp;
-    
-    <div class="scale-up-center3"></div>&nbsp;&nbsp;
-    
-    <div class="scale-up-center4"></div>&nbsp;&nbsp;
-    
-    <div class="scale-up-center5"></div>&nbsp;&nbsp;
-    
-    <div class="scale-up-center6"></div>&nbsp;&nbsp;
-    
-    <div class="scale-up-center7"></div><br>
-    
+  <div class="box sidebar2"></div>
+  <div class="box content2">
+        <div class="scale-up-center7"> <div class="cs">+</div> </div>
+        
+      
+  </div>
+  <div class="box section2"></div>
+
+  <div class="box sidebar3">
+      <div class="scale-up-center2"> <div class="cs">분노</div> </div>
+      <div class="scale-up-center3"> <div class="cs">슬픔</div> </div>
+  </div>
+  <div class="box content3">
+      <%= render partial: 'posts/form', locals: { post: @post } %>
+      <%= link_to '글쓰기', new_post_path %>
+  </div>
+  <div class="box section3">
+       <div class="scale-up-center4"> <div class="cs">역겨움</div> </div>
+      <div class="scale-up-center5"> <div class="cs">두려움</div> </div>
+  </div>
+
+  <div class="box sidebar4"></div>
+  <div class="box content4">
+        <div class="scale-up-center6"> <div class="cs">놀람</div> </div>
+        <div class="scale-up-center"> <div class="cs">기쁨</div> 
+  </div>
+  </div>
+  <div class="box section4"></div>
+
+  <div class="box sidebar5"></div>
+  <div class="box content5">과거감정</div>
+  <div class="box section5"></div>
 </div>
+  <!--<div class="box footer"> 
+     <!-- <%= image_tag "logo_kor.png", size:"60x60"%>-->
+  <!--    <br>-->
+  <!--    Color your own color<br>-->
+  <!--    Cheel</br>-->
+  <!--    <a href="/policy/privacy" target="_blank" class="link_info">개인정보 처리방침</a>-->
+  <!--      <small class="txt_copyright">-->
+  <!--      <a href="http://google.com" class="link_corp" target="_blank">(c) Cheel-->
+  <!--      </a> -->
+  <!--      </small>  -->
+  <!--</div>-->
+  <!--</div>-->
 
-<%= link_to '글쓰기', new_post_path %>
 
-<footer id="dkFoot" class="foot_cheel">
-    <div class="inner_foot">
-        <span class="ico_cheel ico_logo"></span>
-        <%= image_tag "logo_kor.png", size:"80x80", style: "background-position:-200px 0; position:absolute; vertical-align:top;" %>
-        <!-- position:absoulute/ background-position:-200px 0; vertical-align: top; -->
-        <!-- class: "mx-auto d-block" -->
-        <div class="area_quotation">
-            <q class="txt_quotation">Color your own color</q>
-            <span class="txt_by">Cheel</span>
-        </div>
-    <ul class="list_info">
-        <li>
-            <a href="/policy/privacy" target="_blank" class="link_info">개인정보 처리방침</a>
-        </li>
-    </ul>
-    <small class="txt_copyright">
-        <a href="http://google.com" class="link_corp" target="_blank">(c) Cheel
-        </a> 
-    </small>
-    </div>
-</footer>
-<%# app/views/balloons/_form.html.erb %>
 
-<%# Basic usage: %>
-<%= simple_form_for @balloon do |f| %>
-  <%= f.input :color, as: :minicolors %>
-<% end %>
 
-<%# With Bootstrap theme and swatch on the right: %>
-<%= simple_form_for @balloon do |f| %>
-  <%= f.input :color, as: :minicolors, input_html: {data: {
-          minicolors: {theme: :bootstrap, position: :right}}} %>
-<% end %>
+
+
+
+
+       
+     

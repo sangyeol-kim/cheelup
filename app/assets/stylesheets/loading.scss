@@ -1,0 +1,26 @@
+#load { 
+position:absolute; margin:0; left:0; /*로딩바 위치 잡아줌*/
+width: 100%; height: 5px;  
+width: 100%; height: 4px; 
+background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+position: absolute; 
+-moz-animation: nameThis 1s ease-out; /*애니메이션 이름,초,움직임*/
+-webkit-animation: nameThis 1s ease-out; 
+
+} 
+
+
+/*css 애니메이션*/
+@-moz-keyframes nameThis { 
+      0% { width: 0px; 
+      } 
+      100% { width: 100%; 
+      }  
+} 
+
+@-webkit-keyframes nameThis { 
+      0% { width: 0px; 
+      } 
+      100% { width: 100%; 
+      }; 
+}

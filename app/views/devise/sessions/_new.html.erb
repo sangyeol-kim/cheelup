@@ -3,38 +3,38 @@
       <div class="modal-dialog">
         <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title">Log In</h5>
+               
                 <button type="button" class="close" data-dismiss="modal">
                       <span>&times;</span>
                 </button>
               </div>
-              <div class="modal-body">    
+              <div class="modal-body2">    
                 <div>
-                    <h1>Log In</h1>
+                    <div class="sub">&nbsp;&nbsp;&nbsp;로그인</div><br>
                     <br>
                     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
                         <div class="wrap">
-                              <div class="field">
-                                <label for="email">Email</label>
-                                <%= f.email_field :email %>
+                              <div class="field1">
+                                
+                                <%= f.email_field :email, placeholder:"       이메일" %>
                               </div>
                         
-                             <div class="field">
-                                <label for="password">Password</label>
-                                <%= f.password_field :password, autocomplete: "off" %>
+                             <div class="field1">
+                               
+                                <%= f.password_field :password, placeholder:"       비밀번호", autocomplete: "off" %>
                               </div><br>
 
                               <div>
                                   <% if devise_mapping.rememberable? -%>
-                                    <div class="field">
+                                    <div class="field2">
                                           <%= f.check_box :remember_me %>
                                           <%= f.label :remember_me %>
                                     </div>
                                   <% end -%>     
                               </div>
 
-                            <div>
-                              <%= f.submit "Log in", class: 'btn btn-primary' %>
+                             <div class="actions">
+                              <%= f.submit "로그인", class: 'btn btn-primary' %>
                             </div> 
 
                             <div>
@@ -42,12 +42,14 @@
                             </div>
                             
                         </div>
+                        
+                         <div class="hi">
+                      감정에 사로잡혔을 때, 집중해보세요.
+                        </div>
                       <% end %>
                 </div>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-              </div>
+              
         </div>
     </div>
 </div>

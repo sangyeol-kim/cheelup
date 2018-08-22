@@ -10,18 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180811052234) do
+ActiveRecord::Schema.define(version: 20180820102612) do
 
-  create_table "events", force: :cascade do |t|
-    t.string "title"
-    t.text "description"
-    t.datetime "start_time"
-    t.datetime "end_time"
+  create_table "homes", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "homes", force: :cascade do |t|
+  create_table "images", force: :cascade do |t|
+    t.string "alt"
+    t.string "hint"
+    t.string "file"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -31,6 +30,8 @@ ActiveRecord::Schema.define(version: 20180811052234) do
     t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "color"
+    t.datetime "start_time"
   end
 
   create_table "users", force: :cascade do |t|

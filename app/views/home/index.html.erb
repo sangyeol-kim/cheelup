@@ -1,18 +1,18 @@
-<div style="margin-top: 30px; background-color: #d5d5ff; padding: 20px;">
-    <% @posts.each do |x| %>
+<!-- <div style="margin-top: 30px; background-color: #d5d5ff; padding: 20px;">
+    <%# @posts.each do |x| %>
         <div class="row">
-            <%= link_to "#{x.title}", post_path(x) %>
-            <div><%= x.created_at.strftime("%Y년 %m월 %d일")%> 작성</div>
+            <%#= link_to "#{x.title}", post_path(x) %>
+            <div><%#= x.created_at.strftime("%Y년 %m월 %d일")%> 작성</div>
         </div>
-    <% end %>
+    <%# end %>
 </div>
 
 <div class="first_scale"></div>&nbsp;&nbsp;
 
-<%= render partial: 'posts/form', locals: { post: @post } %>
+<%#= render partial: 'posts/form', locals: { post: @post } %>
 
-<%= link_to '달력', calendar_index_path %>
-<%= link_to '글쓰기', new_post_path %>
+<%#= link_to '달력', calendar_index_path %>
+<%#= link_to '글쓰기', new_post_path %>
 <%#= link_to '글보기', post_path(@posts) %>
 
 <script>
@@ -44,6 +44,7 @@ $(document).ready(function() {
         })
     })
 </script>
+-->
  
   <div class="block">
    <h2>Parallax Speed -1</h2></div>

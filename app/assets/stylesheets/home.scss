@@ -223,23 +223,11 @@ body{
 
 /*개별원*/
 
-.first_scale {
-	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	background-color:black;
-    width:100px;
-    height: 100px;
-    border-radius:50px;
-    -webkit-border-radius:50px;
-    -moz-border-radius:50px;
-}
-
-.scale-up-center {
+.scale-up-center0 {
 	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	  /* background:linear-gradient(to bottom right, #8B4513, #383737); */
-	  background-color:red;
-	background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    background-color:yellow;
     width:80px;
     height: 80px;
     border-radius:50px;
@@ -252,7 +240,8 @@ body{
 .scale-up-center2 {
 	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+	/* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
+	  background-color:red;
     width:80px;
     height: 80px;
     border-radius:50px;
@@ -265,7 +254,7 @@ body{
 .scale-up-center3 {
 	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    background-color: green;
     width:80px;
     height: 80px;
     border-radius:50px;
@@ -277,8 +266,8 @@ body{
 .scale-up-center4 {
 	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
- background-blend-mode: multiply,multiply;
+	  background-color:pupple; 
+    background-blend-mode: multiply,multiply;
     width:80px;
     height: 80px;
     border-radius:50px;
@@ -290,7 +279,7 @@ body{
 .scale-up-center5 {
 	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
+    background-color:orange;
     width:80px;
     height: 80px;
     border-radius:50px;
@@ -302,7 +291,7 @@ body{
 .scale-up-center6 {
 	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  	background-color:gray;
     width:80px;
     height: 80px;
     border-radius:50px;
@@ -314,7 +303,8 @@ body{
 .scale-up-center7 {
 	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+	/* background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); */
+	  background-color: green;
 
     width:80px;
     height: 80px;

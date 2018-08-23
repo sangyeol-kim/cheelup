@@ -62,7 +62,61 @@ $(document).ready(function() {
   <!--<div class="box header3">-->
         
   <!--</div>-->
- 
+  
+<!--
+<script>
+$(document).ready(function() {
+    var i = 2;
+                $(".scale-up-center" + i).click(function() {
+                    var color = $(".scale-up-center" + i).css("background-color");
+                    $(".scale-up-center7").css("background-color", color);
+                    $("#post_color").val(color);
+
+    })
+})
+</script>
+-->
+
+<script>
+$(document).ready(function() {
+        $(".scale-up-center0").click(function() {
+            var color = $(".scale-up-center0").css("background-color");
+            $(".scale-up-center7").css("background-color", color);
+        })
+        
+        $(".scale-up-center1").click(function() {
+            var color = $(".scale-up-center1").css("background-color");
+            $(".scale-up-center7").css("background-color", color);
+        })
+        
+        $(".scale-up-center2").click(function() {
+            var color = $(".scale-up-center2").css("background-color");
+            $(".scale-up-center7").css("background-color", color);
+        })
+        
+        $(".scale-up-center3").click(function() {
+            var color = $(".scale-up-center3").css("background-color");
+            $(".scale-up-center7").css("background-color", color);
+        })
+        
+        $(".scale-up-center4").click(function() {
+            var color = $(".scale-up-center4").css("background-color");
+            $(".scale-up-center7").css("background-color", color);
+        })
+        
+        $(".scale-up-center5").click(function() {
+            var color = $(".scale-up-center5").css("background-color");
+            $(".scale-up-center7").css("background-color", color);
+        })
+        
+        $(".scale-up-center6").click(function() {
+            var color = $(".scale-up-center6").css("background-color");
+            $(".scale-up-center7").css("background-color", color);
+        })
+        
+})
+</script>
+
   <div class="box sidebar1"></div>
   <div class="box content1">
     <div class="dep"><div class="sk2">감정색</div><br><div class="scale-up-center7"> <div class="cs">+</div>
@@ -95,7 +149,7 @@ $(document).ready(function() {
   <div class="box sidebar4"></div>
   <div class="box content4">
         <div class="scale-up-center6"> <div class="cs">놀람</div> </div>
-        <div class="scale-up-center"> <div class="cs">기쁨</div> 
+        <div class="scale-up-center0"> <div class="cs">기쁨</div> 
   </div>
   </div>
   <div class="box section4"></div>
@@ -112,33 +166,37 @@ $(document).ready(function() {
 </footer>
 <%# app/views/balloons/_form.html.erb %>
 
-
-
-
-<!--
-<script>
-    $(document).ready(function() {
-        $(".scale-up-centers").click(function() {
-            var color = $(".scale-up-centers").css("background-color");
-            $(".first_scale").css("background-color", color);
-            $("#post_color").val(color);
-        })
-    })
-</script>
-
-<div class="scale-up-centers">center</div>
-<div class="first_scale">qqq</div>&nbsp;&nbsp;
--->
-
     <div class="block4">
       
-    <div class="xxx">
-    <div class="boxcolor">
-      <div class="boxcolor2"></div>
-    </div>    
-    <div class="boxtit"></div> 
-    <div class="boxcon"></div> 
-    </div>
+    <% @posts.each do |x| %>
+        <% if user_signed_in? %>
+            <% if (x.user_id == current_user.id) %>
+                <div class="xxx">
+                <div class="boxcolor">
+                  <div class="boxcolor2" style="background-color:<%=x.color%>;"></div>
+                </div>    
+                <div class="boxtit"><%=x.title%></div> 
+                <div class="boxcon"><%=x.content%></div> 
+                </div>
+            <% else %>
+                <div class="xxx">
+                    <div class="boxcolor">
+                      <div class="boxcolor2"></div>
+                    </div>    
+                    <div class="boxtit"></div> 
+                    <div class="boxcon"></div> 
+                </div>
+            <% end %>
+        <% else %>
+            <div class="xxx">
+                <div class="boxcolor">
+                  <div class="boxcolor2"></div>
+                </div>    
+                <div class="boxtit"></div> 
+                <div class="boxcon"></div> 
+            </div>
+        <% end %>
+    <% end %>
   
   
       <scroll-page id="page-4"></scroll-page></div>

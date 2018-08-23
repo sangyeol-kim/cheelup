@@ -15,8 +15,9 @@
 <div class="nav0">
     <% if user_signed_in? %>
         <div class="nav1">
-            <%= link_to('Logout', destroy_user_session_path, method: :delete, :class => "link3") %>  
-        </div>        
+            <%= link_to('Logout', destroy_user_session_path, method: :delete, :class => "link3") %> 
+            <%= link_to('Edit', "#", :class => "link3", :data => { toggle: "modal", target: "#EditModal"}) %>
+        </div>      
     <% else %>
         <div class="nav2">
         <a class="link1" data-toggle="modal" data-target="#signUpModal">SignUp</a>&nbsp;
@@ -29,3 +30,4 @@
 
 </div>
 </div>
+

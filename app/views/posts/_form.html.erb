@@ -14,14 +14,11 @@
 
 
   <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title%>
-  </div>
-
-  <div class="field">
-    <%= form.label :content %>
-    <%= form.text_area :content %>
-  </div>
+   
+ <%= form.text_field :title, placeholder:"제목" ,style: "width:280px;" %></div>
+ 
+  <div class="un2"><%= form.text_area :content, placeholder:"내용",style: "width:280px; height: 120px;"  %></div>
+  
   
   <div class="field">
     <%= form.label :color %>

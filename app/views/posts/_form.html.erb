@@ -12,6 +12,7 @@
     </div>
   <% end %>
 
+
   <div class="field">
     <%= form.label :title %>
     <%= form.text_field :title%>
@@ -22,9 +23,14 @@
     <%= form.text_area :content %>
   </div>
   
+  <div class="field">
+    <%= form.label :color %>
+    <%= form.text_area :color, id: 'post_color' %>
+  </div>
+      
   <div class="actions">
     <%= form.submit %>
   </div>
 <% end %>
 </div>
-
+ 

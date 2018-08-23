@@ -435,3 +435,26 @@ body{
 
 ::-webkit-scrollbar-thumb {border-radius:8px; }
 
+/*
+.scale-up-centers {
+	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	background-color:red;
+    width:100px;
+    height: 100px;
+    border-radius:50px;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+}
+
+.first_scale {
+	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	background-color:black;
+    width:100px;
+    height: 100px;
+    border-radius:50px;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+}
+*/

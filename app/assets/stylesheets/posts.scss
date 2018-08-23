@@ -8,3 +8,18 @@
 }
 
 .date_content { background-color: yellow; }
+
+.radio-group .radio{
+    float:left;
+    width:50px;
+    height:20px;
+    line-height:20px;
+    text-align:center;
+    background: red;
+    margin:2px;
+    cursor:pointer;
+}
+
+.radio.selected {
+    background:#00cc00;
+}

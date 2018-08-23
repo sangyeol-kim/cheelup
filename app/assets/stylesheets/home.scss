@@ -55,11 +55,14 @@ body{
 
   .nav2:hover{
     color: #818e9c;
+    cursor: pointer;
+
   }
   
   .nav3:hover{
     color: #818e9c;
     cursor:hand;
+     cursor: pointer;
   }
 
 /*-------------*/
@@ -410,7 +413,7 @@ body{
 
 /* 위 아래 버튼 (버튼 없애기를 함) */
 
-::-webkit-scrollbar-thumb {border-radius:8px; }
+// ::-webkit-scrollbar-thumb {border-radius:8px; }
 
 /*
 .scale-up-centers {
@@ -512,7 +515,8 @@ body{
           position: relative;
           overflow: hidden;
           font-size: 16px;
-          background-color: #555;
+           background-color:#2e262e; 
+           
         }
         .block3{
           width: 100%;
@@ -520,7 +524,7 @@ body{
           position: relative;
           overflow: hidden;
           font-size: 16px;
-          background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+            background-color: #5138be;
         }
         .block4{
           width: 100%;
@@ -535,10 +539,11 @@ body{
         
         .box{
           display:block;
+        
         }
 
 
-        // 네비
+        // 네비 
         .navv{
             z-index: 1;
             display: flex;
@@ -596,9 +601,6 @@ body{
             border-radius: 40px;
         }
         
-        .back{
-        transform: translateY(-10%);
-        }
         
    
    

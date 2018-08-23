@@ -53,6 +53,12 @@ body{
   A:active { text-decoration:none; }
   A:hover {text-decoration:none;}
 
+  .nav1:hover{
+    color: #818e9c;
+    cursor: pointer;
+
+  }
+
   .nav2:hover{
     color: #818e9c;
     cursor: pointer;
@@ -227,10 +233,11 @@ body{
 /*개별원*/
 
 .scale-up-center0 {
-	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	  /* background:linear-gradient(to bottom right, #8B4513, #383737); */
-    background-color:yellow;
+   -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+           animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+     /* background:linear-gradient(to bottom right, #8B4513, #383737); */
+     
+    background-color: red;
     width:80px;
     height: 80px;
     border-radius:50px;
@@ -241,10 +248,9 @@ body{
 }
 
 .scale-up-center2 {
-	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	/* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
-	  background-color:red;
+   -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+           animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    background-color: orange;
     width:80px;
     height: 80px;
     border-radius:50px;
@@ -255,9 +261,9 @@ body{
 }
 
 .scale-up-center3 {
-	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    background-color: green;
+   -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+           animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    background-color: yellow;
     width:80px;
     height: 80px;
     border-radius:50px;
@@ -267,10 +273,10 @@ body{
 }
 
 .scale-up-center4 {
-	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	  background-color:pupple; 
-    background-blend-mode: multiply,multiply;
+   -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+           animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    background-color: green;
+   background-blend-mode: multiply,multiply;
     width:80px;
     height: 80px;
     border-radius:50px;
@@ -280,9 +286,9 @@ body{
 }
 
 .scale-up-center5 {
-	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    background-color:orange;
+   -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+           animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    background-color: blue;
     width:80px;
     height: 80px;
     border-radius:50px;
@@ -292,10 +298,9 @@ body{
 }
 
 .scale-up-center6 {
-	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  	background-color:gray;
-    width:80px;
+   -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+           animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    background-color: indigo;    width:80px;
     height: 80px;
     border-radius:50px;
     -webkit-border-radius:50px;
@@ -304,11 +309,9 @@ body{
 }
 
 .scale-up-center7 {
-	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	/* background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); */
-	  background-color: green;
-
+   -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+           animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    background-color: purple;
     width:80px;
     height: 80px;
     border-radius:50px;
@@ -318,7 +321,7 @@ body{
 }
 
 /*원흔들기*/
-.scale-up-center:hover {
+.scale-up-center0:hover {
   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
@@ -415,30 +418,6 @@ body{
 
 // ::-webkit-scrollbar-thumb {border-radius:8px; }
 
-/*
-.scale-up-centers {
-	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	background-color:red;
-    width:100px;
-    height: 100px;
-    border-radius:50px;
-    -webkit-border-radius:50px;
-    -moz-border-radius:50px;
-}
-
-.first_scale {
-	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	background-color:black;
-    width:100px;
-    height: 100px;
-    border-radius:50px;
-    -webkit-border-radius:50px;
-    -moz-border-radius:50px;
-}
-*/
-
 .boxcolor{
       width: 250px;
     height: 50px;
@@ -534,7 +513,7 @@ body{
              
           font-size: 16px;
           background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
- background-blend-mode: multiply,multiply;
+          background-blend-mode: multiply,multiply;
         }
         
         .box{
@@ -580,6 +559,23 @@ body{
             font-size: 10pt;
             padding-bottom: 10px;
             border-radius: 40px;
+        }
+        
+        .link3{
+            color:white;
+            font-family: MaisonNeue,Helvetica Neue,Helvetica,Arial,sans-serif;
+            border: 1px solid transparent;
+            border-color: rgba(255, 255, 255, 0.24);
+            padding: 0 16px;
+            padding-top: 10px;
+            font-size: 10pt;
+            padding-bottom: 10px;
+            border-radius: 40px;
+        }
+        
+        .link3:hover{
+            color:white;
+            border-color: #fff;
         }
         
         .link1:hover{

@@ -1,34 +1,31 @@
-          <div class="navv">
-            
-          <div class="logog">
-          <%= image_tag "logo_kor.png", size:"50x50" %>
-          </div>
-           
-          
-          <nav class="mov">
-          <a class="a" href="#page-3">TODAY</a>&nbsp;</a>
-         <a class="b" href="#page-3`">WRITE&nbsp;</a>
-          <a class="c" href="#page-4">RANDOM</a>&nbsp;</a>
-         <a class="d" href="#page-5">TIMELINE</a>
-        </nav>
-         
-         <div class="nav0">
-          
-        <% if user_signed_in? %>
-          <div class="nav1">
-            <%= link_to('Logout', destroy_user_session_path, method: :delete) %>  
-          </div>        
-        <% else %>
-          <div class="nav2">
-            <a class="link1" data-toggle="modal" data-target="#signUpModal">SignUp</a>&nbsp;
-          </div>
-          <div class="nav3">
-            <a class="link2" data-toggle="modal" data-target="#logInModal">LogIn</a>
-          </div>
-       
-          
-        <% end %>
-        
-    
-         </div>
+<div class="navv">
+
+<div class="logog">
+    <%= image_tag "logo_kor.png", size:"50x50" %>
+</div>
+
+
+<nav class="mov">
+    <a class="a" href="#page-3">TODAY</a>&nbsp;</a>
+    <a class="b" href="#page-3`">WRITE&nbsp;</a>
+    <a class="c" href="#page-4">RANDOM</a>&nbsp;</a>
+    <a class="d" href="#page-5">TIMELINE</a>
+</nav>
+
+<div class="nav0">
+    <% if user_signed_in? %>
+        <div class="nav1">
+            <%= link_to('Logout', destroy_user_session_path, method: :delete, :class => "link3") %>  
+        </div>        
+    <% else %>
+        <div class="nav2">
+        <a class="link1" data-toggle="modal" data-target="#signUpModal">SignUp</a>&nbsp;
+        </div>
+        <div class="nav3">
+        <a class="link2" data-toggle="modal" data-target="#logInModal">LogIn</a>
+        </div>
+    <% end %>
+
+
+</div>
 </div>

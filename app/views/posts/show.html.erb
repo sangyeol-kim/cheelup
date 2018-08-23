@@ -1,17 +1,12 @@
-ㅏ<p id="notice"><%= notice %></p>
+<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
-
-<p>
-  <strong>Content:</strong>
-  <%= @post.content.html_safe %>
-</p>
-color: <%= @post.color %>
-
- <p style="color: red;">asd: <%= @post.start_time %></p>
+<div class="xxx">
+  <div class="boxcolor">
+    <div class="boxcolor2" style="background-color:<%=@post.color%>;"></div>
+  </div>    
+  <div class="boxtit"><%=@post.title%></div> 
+  <div class="boxcon"><%=@post.content%></div> 
+</div>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', root_path %>

@@ -36,49 +36,6 @@ $(document).ready(function() {
     })
 </script>
 -->
- 
-  <div class="block">
-   <h2>Parallax Speed -1</h2></div>
-  <div class="wrapper">
-   <div class="box">
-    <div class="block2"> 
-   <ul class="Words">
-  <li class="Words-line">
-    <p>&nbsp;</p>
-    <p>color</p>
-  </li>
-  <li class="Words-line">
-    <p>color</p>
-    <p>your</p>
-  </li>
-  <li class="Words-line">
-    <p>your</p>
-    <p>own</p>
-  </li>
-  <li class="Words-line">
-    <p>own</p>
-    <p>color</p>
-  </li>
-  <li class="Words-line">
-    <p>color</p>
-    <p></p>
-  </li>
-  <li class="Words-line">
-    <p></p>
-    <p></p>
-  </li>
-  <li class="Words-line">
-    <p></p>
-    <p></p>
-  </li>
-</ul>
-    <div class="down"> <a href="#page-3"><%= image_tag "down.png", size:"40x40" %></a></div>
-    <div class="back"></div>
-    
-    </div>
-     
-    <div class="block3">
-     <div class="wrapper">
 
   <!--<div class="box header">-->
     
@@ -107,15 +64,13 @@ $(document).ready(function() {
 </script>
 -->
 
+   
+   
+   
 <script>
 $(document).ready(function() {
         $(".scale-up-center0").click(function() {
             var color = $(".scale-up-center0").css("background-color");
-            $(".scale-up-center7").css("background-color", color);
-        })
-        
-        $(".scale-up-center1").click(function() {
-            var color = $(".scale-up-center1").css("background-color");
             $(".scale-up-center7").css("background-color", color);
         })
         
@@ -146,7 +101,69 @@ $(document).ready(function() {
         
 })
 </script>
+   
+    <div class="box">
+        <div class="block2"> 
+        <div class="subb">
+          내 마음의 기분, 순간을 칠하다.
+        </div>
+        <div class="subb2">
+          우리 모두가 자신을 이해할 수 있을 때까지.
+        </div>
+        <div class="subb3">
+          나를 마주하고 기록해보세요. 간단합니다.
+        </div>
+       <ul class="Words">
+      <li class="Words-line">
+        <p>&nbsp;</p>
+        <p>color</p>
+      </li>
+      <li class="Words-line">
+        <p>color</p>
+        <p>your</p>
+      </li>
+      <li class="Words-line">
+        <p>your</p>
+        <p>own</p>
+      </li>
+      <li class="Words-line">
+        <p>own</p>
+        <p>color</p>
+      </li>
+      <li class="Words-line">
+        <p>color</p>
+        <p></p>
+      </li>
+      <li class="Words-line">
+        <p></p>
+        <p></p>
+      </li>
+      <li class="Words-line">
+        <p></p>
+        <p></p>
+      </li>
+    </ul>
+    <div class="down"> <a href="#page-3"><%= image_tag "down.png", size:"40x40" %></a></div>
+    <div class="back"></div>
+    
+    </div>
+     
+    <div class="block3">
+     <div class="wrapper">
 
+  <!--<div class="box header">-->
+    
+  <!--</div>-->
+  
+  <!--<div class="box header2">-->
+       
+         
+  <!--</div>-->
+  
+  <!--<div class="box header3">-->
+        
+  <!--</div>-->
+ 
   <div class="box sidebar1"></div>
   <div class="box content1">
     <div class="dep"><div class="sk2">감정색</div><br><div class="scale-up-center7"> <div class="cs">+</div>
@@ -169,7 +186,6 @@ $(document).ready(function() {
   </div>
   <div class="box content3">
       <%= render partial: 'posts/form', locals: { post: @post } %>
-      <!--<%= link_to '글쓰기', new_post_path %>-->
   </div>
   <div class="box section3">
        <div class="scale-up-center4"> <div class="cs">역겨움</div> </div>
@@ -193,21 +209,21 @@ $(document).ready(function() {
    
     <scroll-page id="page-3"></scroll-page>
     </div>
-</footer>
-<%# app/views/balloons/_form.html.erb %>
-
+    
     <div class="block4">
-      
+        
     <% @posts.each do |x| %>
         <% if user_signed_in? %>
             <% if (x.user_id == current_user.id) %>
                 <div class="xxx">
-                <div class="boxcolor">
-                  <div class="boxcolor2" style="background-color:<%=x.color%>;"></div>
-                </div>    
-                <div class="boxtit"><%=x.title%></div> 
-                <div class="boxcon"><%=x.content%></div> 
+                    <div class="boxcolor">
+                      <div class="boxcolor2" style="background-color:<%=x.color%>;"></div>
+                    </div>    
+                    <div class="boxtit"><%=x.title%></div> 
+                    <div class="boxcon"><%=x.content%></div> 
+                <%= link_to "자세히 보기", post_path(x), :style => "color:black;" %> 
                 </div>
+
             <% else %>
                 <div class="xxx">
                     <div class="boxcolor">
@@ -227,10 +243,10 @@ $(document).ready(function() {
             </div>
         <% end %>
     <% end %>
-  
-  
-      <scroll-page id="page-4"></scroll-page></div>
+        
+    <scroll-page id="page-4"></scroll-page></div>
     <div class="block5"><scroll-page id="page-5"></scroll-page></div>
     <div class="block6"><scroll-page id="page-6"></scroll-page></div>
   
    </div>
+   

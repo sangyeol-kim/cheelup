@@ -113,7 +113,7 @@ $(document).ready(function() {
         <div class="subb3">
           나를 마주하고 기록해보세요. 간단합니다.
         </div>
-       <ul class="Words">
+    <ul class="Words">
       <li class="Words-line">
         <p>&nbsp;</p>
         <p>color</p>
@@ -180,14 +180,23 @@ $(document).ready(function() {
 
   <div class="box section2"></div>-->
 
-
+  <div class="box sidebar3">
+      <div class="scale-up-center2"> <div class="cs">분노</div> </div>
+      <div class="scale-up-center3"> <div class="cs">슬픔</div> </div>
+  </div>
   <div class="box content3">
       <%= render partial: 'events/form', locals: { event: @event } %>
-
+  </div>
+  <div class="box section3">
+       <!--<div class="scale-up-center4"> <div class="cs">역겨움</div> </div>
+       <div class="scale-up-center5"> <div class="cs">두려움</div>--> </div>
   </div>
 
-
-
+  <div class="box sidebar4"></div>
+  <div class="box content4">
+        <div class="scale-up-center6"> <div class="cs">놀람</div> </div>
+        <div class="scale-up-center0"> <div class="cs">기쁨</div> 
+  </div>
   </div>
   <div class="box section4"></div>
 
@@ -203,10 +212,40 @@ $(document).ready(function() {
     
     <div class="block4">
         
+    <% @events.each do |x| %>
+        <% if user_signed_in? %>
+            <% if (x.user_id == current_user.id) %>
+                <div class="xxx">
+                    <div class="boxcolor">
+                      <div class="boxcolor2" style="background-color:<%=x.color%>;"></div>
+                    </div>    
+                    <div class="boxtit"><%=x.title%></div> 
+                    <div class="boxcon"><%=x.description%></div> 
+                <%= link_to "글 보기", event_path(x), :style => "color:black;" %> 
+                </div>
+
+            <% else %>
+                <div class="xxx">
+                    <div class="boxcolor">
+                      <div class="boxcolor2"></div>
+                    </div>    
+                    <div class="boxtit"></div> 
+                    <div class="boxcon"></div> 
+                </div>
+            <% end %>
+        <% else %>
+            <div class="xxx">
+                <div class="boxcolor">
+                  <div class="boxcolor2"></div>
+                </div>    
+                <div class="boxtit"></div> 
+                <div class="boxcon"></div> 
+            </div>
+        <% end %>
+    <% end %>
         
     <scroll-page id="page-4"></scroll-page></div>
     <div class="block5"><scroll-page id="page-5"></scroll-page></div>
     <div class="block6"><scroll-page id="page-6"></scroll-page></div>
   
    </div>
-   

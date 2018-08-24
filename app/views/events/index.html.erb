@@ -1,7 +1,9 @@
+
+
 <div class="row">
     <div class="col-lg-12">
         <section class="panel">
-            <div class="panel-body">
+            <div class="panel-body" style="margin-top: 100px; margin-left: 100px; margin-right: 100px;">
                 <div id="calendar"></div>
             </div>
         </section>
@@ -19,8 +21,3 @@
             });
 
     </script>
-
-<%= link_to 'New Event', new_event_path %>
-<% Event.all.each do |x| %>
-<%= x.title %>
-<% end %>

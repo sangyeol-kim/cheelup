@@ -1,29 +1,16 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @event.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @event.description %>
-</p>
-
-<p>
-  <strong>Color:</strong>
-  <%= @event.color %>
-</p>
-
-<p>
-  <strong>Start time:</strong>
-  <%= @event.start_time %>
-</p>
-
-<p>
-  <strong>End time:</strong>
-  <%= @event.end_time %>
-</p>
-
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+<div class="boxxx">
+ <div class="boxcolor" >
+       <div class="boxcolor2"></div>
+ </div>    
+  <div class="boxtit" style="color:black;">
+     <strong>Title:</strong>
+     <%= @event.title %>
+   </div> 
+  <div class="boxcon"style="color:black;">
+    <strong>Description:</strong>
+    <%= @event.description %>
+  </div> 
+</div>
+<div class="container" style="position:center;">
+<%= link_to "Back", events_path, :class => "btn btn-outline-primary" %>
+</div>

@@ -143,8 +143,8 @@ $(document).ready(function() {
       <%= render partial: 'events/form', locals: { event: @event } %>
   </div>
   <div class="box section3">
-       <!--<div class="scale-up-center4"> <div class="cs">역겨움</div> </div>
-       <div class="scale-up-center5"> <div class="cs">두려움</div>--> </div>
+      <div class="scale-up-center4"> <div class="cs">역겨움</div> </div>
+      <div class="scale-up-center5"> <div class="cs">두려움</div> </div>
   </div>
 
   <div class="box sidebar4"></div>
@@ -167,6 +167,7 @@ $(document).ready(function() {
    
     <div class="block4">
         
+
     <% @events.each do |x| %>
         <% if user_signed_in? %>
             <% if (x.user_id == current_user.id) %>
@@ -202,5 +203,4 @@ $(document).ready(function() {
     <scroll-page id="page-4"></scroll-page></div>
     <div class="block5"><scroll-page id="page-5"></scroll-page></div>
     <div class="block6"><scroll-page id="page-6"></scroll-page></div>
-  
    </div>

@@ -1,6 +1,5 @@
-<div class="navv">
-
-<div class="logog">
+<header class="navv navbar-fixed-top" style="background-color:pink; ">
+  <div class="logog">
     <%= image_tag "logo_kor.png", size:"50x50" %>
 </div>
 
@@ -17,12 +16,12 @@
 
 <div class="nav0">
     <% if user_signed_in? %>
-        <div class="nav1">
+        <div class="nav1" style="width:200px;">
             <%= link_to('Logout', destroy_user_session_path, method: :delete, :class => "link3") %> 
             <%= link_to('Edit', "#", :class => "link3", :data => { toggle: "modal", target: "#EditModal"}) %>
         </div>      
     <% else %>
-        <div class="nav2">
+        <div class="nav2" style="width:150px;">
         <a class="link1" data-toggle="modal" data-target="#signUpModal">SignUp</a>&nbsp;
         </div>
         <div class="nav3">
@@ -32,5 +31,5 @@
 
 
 </div>
-</div>
 
+</header>

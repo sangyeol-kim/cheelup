@@ -20,5 +20,6 @@
 //= require tinymce-jquery
 //= require jquery.minicolors
 //= require jquery.minicolors.simple_form
+//= require moment 
+//= require fullcalendar
 
-$('#calendar').fullCalendar({});

@@ -8,8 +8,11 @@
     <%= f.input :color %>
     <%= f.input :start_time %>
     <%= f.input :end_time %>
-  </div>
+    <%= f.hidden_field :user_id, :value => @event.user_id %>      
+    <%= f.hidden_field :user_email, :value => @event.user_email %>      
 
+
+  </div>
   <div class="form-actions">
     <%= f.button :submit %>
   </div>

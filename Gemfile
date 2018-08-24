@@ -5,8 +5,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'jquery-minicolors-rails'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
 # Use sqlite3 as the database for Active Record
@@ -63,3 +61,4 @@ gem 'fog', '~> 1.41.0'
 gem 'rails_db'
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
+gem 'jquery-minicolors-rails'

@@ -2,16 +2,17 @@
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-  <div class="form-inputs">
+  <div class="title">
     <%= f.input :title %>
+  </div>
+  <div class="description">
     <%= f.input :description %>
-    <%= f.input :color %>
-    <%= f.input :start_time %>
-    <%= f.input :end_time %>
+  </div>
     <%= f.hidden_field :user_id, :value => @event.user_id %>      
     <%= f.hidden_field :user_email, :value => @event.user_email %>      
-
-
+  <div class="color">
+    <%= f.input :color, as: :minicolors, input_html: {data: {
+        minicolors: {theme: :bootstrap, position: :right}}} %>
   </div>
   <div class="form-actions">
     <%= f.button :submit %>

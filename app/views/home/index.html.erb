@@ -185,7 +185,8 @@ $(document).ready(function() {
       <div class="scale-up-center3"> <div class="cs">슬픔</div> </div>
   </div>
   <div class="box content3">
-      <%= render partial: 'posts/form', locals: { post: @post } %>
+      <%= render partial: 'events/form', locals: { event: @event } %>
+
   </div>
   <div class="box section3">
        <div class="scale-up-center4"> <div class="cs">역겨움</div> </div>
@@ -212,7 +213,7 @@ $(document).ready(function() {
     
     <div class="block4">
         
-    <% @posts.each do |x| %>
+    <% @events.each do |x| %>
         <% if user_signed_in? %>
             <% if (x.user_id == current_user.id) %>
                 <div class="xxx">

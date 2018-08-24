@@ -62,5 +62,5 @@ gem 'tinymce-rails-imageupload', '~> 4.0.0.beta'
 gem 'carrierwave'
 gem 'fog', '~> 1.41.0'
 gem 'rails_db'
-gem 'simple_form'
-gem "simple_calendar", "~> 2.0"
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'

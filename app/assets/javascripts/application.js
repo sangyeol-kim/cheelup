@@ -22,3 +22,5 @@
 //= require jquery.minicolors.simple_form
 
 $('#calendar').fullCalendar({});
+
+

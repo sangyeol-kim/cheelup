@@ -13,6 +13,7 @@ body{
 }*/
 
 
+
 .header{
      grid-area: header;
     float: center;
@@ -516,10 +517,36 @@ body{
           background-blend-mode: multiply,multiply;
         }
         
-        .box{
-          display:block;
-        
+        .box2{
+          position: absolute;
+    width: 100%;
+    /* text-align: center; */
+    display: grid;
+    /* grid-template-rows: 40% 40% 20%; */
+    height: 100%;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-areas: "ehlfk1 ehlfk2 ehlfk3";
+    color: #444;
+    grid-template-rows: 100%;
         }
+        
+        .ehlfk1 {
+  grid-area: ehlfk1;
+  position: relative;
+  justify-self: right;
+}
+.ehlfk2 {
+  grid-area: ehlfk2;
+  position: relative;
+      justify-self: center;
+}
+.ehlfk3 {
+  grid-area: ehlfk3;
+      justify-self: left;
+  position: relative;
+}
+
+
 
 
         // 네비 
@@ -670,7 +697,7 @@ a.d:hover {
     position: absolute;
     z-index: 1;
     top: 90%;
-    left: 50%;
+    left: 48.5%;
 }
 
 
@@ -679,3 +706,50 @@ a.d:hover {
     /* top: 50%; */
     margin-top: 15%;
 }
+
+
+
+// @media screen and (min-width:414px) and (max-width:1024px){
+// .Words {
+//     margin: 0 auto;
+//     color: #ffffff;
+//     width: 270px;
+//     font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+//     position: absolute;
+//     /* margin-left: 20%; */
+//     font-size: 200px;
+//     font-weight: 900;
+//     letter-spacing: -2px;
+//     text-transform: uppercase;
+//     -webkit-transform: translate3d(0, 0, 0);
+//     transform: translate3d(0, 0, 0);
+//     -webkit-font-smoothing: antialiased;
+//     -webkit-font-kerning: normal;
+//     -webkit-text-size-adjust: 100%;
+// }
+
+
+
+// .block2 {
+//     width: 100%;
+//     height: 100vh;
+//     position: relative;
+//     overflow: hidden;
+//     font-size: 16px;
+//     background-color: #000;
+// }
+
+// .subb {
+//     color: #fff;
+//     font-size: 20pt;
+//     margin-left: 500px;
+// }
+// }
+
+
+.subb3 {
+    text-align: center;
+    font-size: 10pt;
+        margin-top: 1%;
+}
+ 

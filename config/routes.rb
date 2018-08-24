@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
+  resources :events
   root 'home#index'
   
   get 'home/show' => 'home#show'
-  get 'calendar/index' => 'calendar#index'
+  
+  get 'events/user_events' => 'events#user_events'
+
 
   devise_for :users
   resources :posts

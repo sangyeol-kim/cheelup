@@ -4,12 +4,15 @@
     <%= image_tag "logo_kor.png", size:"50x50" %>
 </div>
 
-
 <nav class="mov">
     <a class="a" href="#page-3">TODAY</a>&nbsp;</a>
     <a class="b" href="#page-3`">WRITE&nbsp;</a>
     <a class="c" href="#page-4">RANDOM</a>&nbsp;</a>
-    <a class="d" href="#page-5">TIMELINE</a>
+    <% if user_signed_in? %>
+        <a class="d" href='events'>TIMELINE</a>
+    <% else %>
+        <%= link_to('TIMELINE', "#", :class => "d", :data => { toggle: "modal", target: "#logInModal"}) %>
+    <% end %>
 </nav>
 
 <div class="nav0">

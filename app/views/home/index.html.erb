@@ -45,8 +45,12 @@ $(document).ready(function() {
           
         </div>
         </div>
+<<<<<<< HEAD
         <div class="ehlfk2">
        <ul class="Words">
+=======
+    <ul class="Words">
+>>>>>>> master
       <li class="Words-line">
         <p>&nbsp;</p>
         <p>color</p>
@@ -136,11 +140,11 @@ $(document).ready(function() {
       <div class="scale-up-center3"> <div class="cs">슬픔</div> </div>
   </div>
   <div class="box content3">
-      <%= render partial: 'posts/form', locals: { post: @post } %>
+      <%= render partial: 'events/form', locals: { event: @event } %>
   </div>
   <div class="box section3">
-       <div class="scale-up-center4"> <div class="cs">역겨움</div> </div>
-      <div class="scale-up-center5"> <div class="cs">두려움</div> </div>
+       <!--<div class="scale-up-center4"> <div class="cs">역겨움</div> </div>
+       <div class="scale-up-center5"> <div class="cs">두려움</div>--> </div>
   </div>
 
   <div class="box sidebar4"></div>
@@ -163,7 +167,7 @@ $(document).ready(function() {
    
     <div class="block4">
         
-    <% @posts.each do |x| %>
+    <% @events.each do |x| %>
         <% if user_signed_in? %>
             <% if (x.user_id == current_user.id) %>
                 <div class="xxx">
@@ -171,8 +175,8 @@ $(document).ready(function() {
                       <div class="boxcolor2" style="background-color:<%=x.color%>;"></div>
                     </div>    
                     <div class="boxtit"><%=x.title%></div> 
-                    <div class="boxcon"><%=x.content%></div> 
-                <%= link_to "자세히 보기", post_path(x), :style => "color:black;" %> 
+                    <div class="boxcon"><%=x.description%></div> 
+                <%= link_to "글 보기", event_path(x), :style => "color:black;" %> 
                 </div>
 
             <% else %>
@@ -200,4 +204,3 @@ $(document).ready(function() {
     <div class="block6"><scroll-page id="page-6"></scroll-page></div>
   
    </div>
-   

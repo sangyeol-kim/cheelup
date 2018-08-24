@@ -1,72 +1,5 @@
-<!-- <div style="margin-top: 30px; background-color: #d5d5ff; padding: 20px;">
-    <%# @posts.each do |x| %>
-        <div class="row">
-            <%#= link_to "#{x.title}", post_path(x) %>
-            <div><%#= x.created_at.strftime("%Y년 %m월 %d일")%> 작성</div>
-        </div>
-    <%# end %>
-</div>
 
-<div class="first_scale"></div>&nbsp;&nbsp;
 
-<%#= render partial: 'posts/form', locals: { post: @post } %>
-
-<%#= link_to '달력', calendar_index_path %>
-<%#= link_to '글쓰기', new_post_path %>
-<%#= link_to '글보기', post_path(@posts) %>
-
-$(document).ready(function() {
-        $(".scale-up-center").click(function() {
-            var color = $(".scale-up-center").css("background-color");
-            $(".first_scale").css("background-color", color);
-            
-            var formData = new FormData();
-
-            formData.append('color', color);
-            
-            $.ajax({
-                  url: "/home/color",
-                  type: 'POST',
-                  data: formData,
-                  success: function (data) {
-                      console.log(data);
-                  }
-            });
-        })
-    })
-</script>
--->
-
-  <!--<div class="box header">-->
-    
-  <!--</div>-->
-  
-  <!--<div class="box header2">-->
-       
-         
-  <!--</div>-->
-  
-  <!--<div class="box header3">-->
-        
-  <!--</div>-->
-  
-<!--
-<script>
-$(document).ready(function() {
-    var i = 2;
-                $(".scale-up-center" + i).click(function() {
-                    var color = $(".scale-up-center" + i).css("background-color");
-                    $(".scale-up-center7").css("background-color", color);
-                    $("#post_color").val(color);
-
-    })
-})
-</script>
--->
-
-   
-   
-   
 <script>
 $(document).ready(function() {
         $(".scale-up-center0").click(function() {
@@ -101,19 +34,23 @@ $(document).ready(function() {
         
 })
 </script>
-   
-    <div class="box">
-        <div class="block2"> 
+   <div class="block2">
+    <div class="box2">
+        
+            <div class="ehlfk1">
         <div class="subb">
           내 마음의 기분, 순간을 칠하다.
+    
+        
+          
         </div>
-        <div class="subb2">
-          우리 모두가 자신을 이해할 수 있을 때까지.
         </div>
-        <div class="subb3">
-          나를 마주하고 기록해보세요. 간단합니다.
-        </div>
+<<<<<<< HEAD
+        <div class="ehlfk2">
+       <ul class="Words">
+=======
     <ul class="Words">
+>>>>>>> master
       <li class="Words-line">
         <p>&nbsp;</p>
         <p>color</p>
@@ -143,11 +80,29 @@ $(document).ready(function() {
         <p></p>
       </li>
     </ul>
-    <div class="down"> <a href="#page-3"><%= image_tag "down.png", size:"40x40" %></a></div>
+   <div class="rkawjd">나를 마주해보고 기록해보세요. 간단합니다!</div>
+ 
+         </div>
+         
+         <div class="ehlfk3">
+             <div class="subb2">
+             우리 모두가 자신을 이해할 수 있을 때까지.
+             </div>
+         </div>
+         
+    <div class="down"> <a href="#page-3"><%= image_tag "down.png", size:"30x30" %></a></div>
     <div class="back"></div>
     
+   
+    
     </div>
-     
+    
+    
+    
+   
+
+</div>
+
     <div class="block3">
      <div class="wrapper">
 
@@ -209,7 +164,7 @@ $(document).ready(function() {
    
     <scroll-page id="page-3"></scroll-page>
     </div>
-    
+   
     <div class="block4">
         
     <% @events.each do |x| %>

@@ -23,3 +23,9 @@
 //= require moment 
 //= require fullcalendar
 
+<<<<<<< HEAD
+$('#calendar').fullCalendar({});
+
+
+=======
+>>>>>>> master

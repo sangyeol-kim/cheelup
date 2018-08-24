@@ -1,9 +1,10 @@
 .Words {
   margin: 0 auto;
   color: #ffffff;
-  width: 270px;
+      width: 500px;
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-size: 68px;
+  margin-top: 27%;
   font-weight: 900;
   letter-spacing: -2px; 
   text-transform: uppercase; 
@@ -28,6 +29,9 @@ p {
 .Words:hover p {
   -webkit-transform: translate3d(0, -65px, 0);
           transform: translate3d(0, -65px, 0);
+  color:#2e262e;
+ -webkit-text-stroke: 1px #cc0000;
+
 }
 
 .Words-line:nth-child(odd) {
@@ -61,6 +65,7 @@ p {
 }
 
 .Words-line {
+      width: 50%;
   height: 50px;
   overflow: hidden;
   position: relative;
@@ -68,11 +73,122 @@ p {
 
 .subb{
   color:#fff;
+  text-align: left;
+      color: #fff;
+
+    font-size: 10pt;
+        height: 100px;
+    line-height: 50;
 }
 .subb2{
   color:#fff;
+  text-align: right;
+      
+  
+    font-size: 10pt;
+     height: 100px;
+    line-height: 50;
 }
 
 .subb3{
   color:#fff;
 }        
+.rkawjd {
+    text-align: center;
+    font-size: 10pt;
+    color: #fff;
+    height: 50px;
+    line-height: 9.5;
+}
+
+
+
+
+
+
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+
+
+form.hue {
+  width: 320px;
+  margin: 45px auto;
+}
+
+
+.group1 {
+  position: relative;
+  margin: 45px 0;
+}
+
+
+
+input.e{
+  background: none;
+  color: #c6c6c6;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 320px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #fff;
+}
+
+
+input.e:focus, {
+  outline: none;
+  border-image-source: linear-gradient(red,blue,yellow);
+
+
+
+border-image-slice: 1;
+}
+
+input.e:focus ~ ::-webkit-input-placeholder, input.e:valid ~ ::-webkit-input-placeholder {
+  top: -14px;
+  font-size: 12px;
+  color: #2196F3;
+}
+input.e:focus ~ .bar:before
+{
+  width: 320px;
+}
+
+input.e[type="password"] {
+  letter-spacing: 0.3em;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 300ms ease all;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 320px;
+}
+.bar:before {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: #fff;
+  transition: 300ms ease all;
+  left: 0%;
+}
+
+

@@ -1,24 +1,5 @@
-# README
+# 2018 멋쟁이 사자처럼 중앙 해커톤
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+감정에 색을 칠하다 "칠"
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* 제작 : 김상열 고유미 이상은 (강원대학교 춘천캠퍼스) 김은진 (한국외대 글로벌)
